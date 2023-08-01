@@ -139,7 +139,13 @@ const Patients = () => {
 
   return (
     <div>
-      <Table columns={columns} dataSource={appointments} />
+      <Table
+        columns={columns}
+        dataSource={appointments}
+        scroll={{
+          x: 300,
+        }}
+      />
     </div>
   );
 };

@@ -10,7 +10,6 @@ import DoctorForm from "./pages/DoctorForm";
 import Admin from "./pages/Admin";
 import PublicRoute from "./Utils/PublicRoute";
 import BookAppointment from "./pages/BookAppointment";
-import { useEffect } from "react";
 
 const App = () => {
   const { loading } = useSelector((store) => store.loader);

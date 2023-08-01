@@ -36,7 +36,7 @@ const Login = () => {
 
   return (
     <div className="w-screen mt-10 flex justify-center items-center">
-      <div className="w-[90%] md:w-[40%] p-5  border-opacity-25 shadow-lg border-solid border-blue-100 ">
+      <div className="w-[90%] lg:w-[40%] xl:w-[30%] p-5  border-opacity-25 shadow-lg border-solid border-blue-100 ">
         <h1 className="text-blue-900">Login</h1>
         <Divider className="bg-blue-900" />
         <Form layout="vertical" onFinish={onFinish}>
@@ -63,7 +63,10 @@ const Login = () => {
           <Divider>
             <h3 className="font-normal w-full text-center text-gray-400">
               Don't have an account?{" "}
-              <Link to="/register" className="text-blue-700 underline">
+              <Link
+                to="/register"
+                className="text-blue-700 underline block md:inline-block"
+              >
                 Create an Account
               </Link>
             </h3>

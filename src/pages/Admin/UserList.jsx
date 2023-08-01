@@ -69,7 +69,14 @@ const UserList = () => {
 
   return (
     <div>
-      <Table columns={columns} dataSource={users} />;
+      <Table
+        columns={columns}
+        dataSource={users}
+        scroll={{
+          x: 300,
+        }}
+      />
+      ;
     </div>
   );
 };

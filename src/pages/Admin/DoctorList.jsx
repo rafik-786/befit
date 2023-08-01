@@ -224,7 +224,14 @@ const DoctorList = () => {
 
   return (
     <div>
-      <Table columns={columns} dataSource={doctors} />;
+      <Table
+        columns={columns}
+        dataSource={doctors}
+        scroll={{
+          x: 300,
+        }}
+      />
+      ;
     </div>
   );
 };
